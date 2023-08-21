@@ -1,0 +1,282 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* start hero section */
+.hero {
+  height: 100vh;
+}
+
+.judul h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+}
+
+.judul button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 10px 32px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.judul .btn-danger {
+  margin-right: 24px;
+}
+
+.judul p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+section .svg-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* HERO section akhir */
+
+/* start navbar */
+.navbar div ul li {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style: none;
+  gap: 48px;
+  margin: auto;
+  padding: 14px 48px;
+}
+
+.navbar ul li:hover {
+  color: #393e46;
+}
+
+.menu-toggle {
+  display: none;
+  height: 20px;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+  width: 100%;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background-color: #dc3545;
+  transition: all 0.5s;
+  margin-bottom: 7px;
+}
+
+/* humburger animasi */
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: #dc3545;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-43deg);
+  background-color: #dc3545;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  scale: 0;
+}
+
+/* end navbar */
+
+/* start about me */
+
+section.me {
+  height: 100vh;
+  padding-top: 80px;
+  position: relative;
+}
+
+.me .content .lg-img {
+  width: 100px;
+  position: absolute;
+  top: 50px;
+}
+.me .content .lk-img {
+  width: 100px;
+  position: absolute;
+  bottom: 45px;
+}
+
+section.me h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+section.me p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+section.me .p-img {
+  height: 500px;
+  background-color: #dc3545;
+  border-radius: 35%;
+  overflow: hidden;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+section.me .p-img:hover {
+  opacity: 1;
+}
+
+section.me div img {
+  width: 400px;
+  /* position: relative;
+  top: -33px; */
+}
+
+section.me .container {
+  gap: 18px;
+}
+section.me .container .content {
+  gap: 5px;
+}
+
+/* end about me */
+
+/* start section idn */
+
+/* end section idn */
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .me .content .lk-img {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 1031px) {
+  .judul h1 {
+    font-size: 9vmax;
+  }
+}
+
+/* Menyusut ul nya */
+@media (max-width: 991px) {
+  /* .navbar .container .pembungkus {
+  } */
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: -10px;
+    flex-direction: column;
+    height: 220px;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: -2;
+    transition: all 1s;
+    opacity: 0;
+    margin-top: 75px;
+    background-color: #fff;
+    transform: translateY(-100%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar ul.slide {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  section.me div.container {
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  section.me .p-img {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+  }
+  section.me .p-img img {
+    top: 0;
+  }
+
+  .me .content .lg-img {
+    top: 50px;
+    right: 40px;
+  }
+  .me .content .lk-img {
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 764px) {
+  .header {
+    max-width: 550px;
+  }
+  .judul h1 {
+    font-size: 8vmax;
+  }
+
+  .me .content .lg-img {
+    top: 50px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .judul h1 {
+    font-size: 12vmax;
+  }
+
+  section.me .content h1 {
+    font-size: 6vmax;
+  }
+
+  .me .content .lg-img {
+    top: -20px;
+    right: 20px;
+  }
+}
