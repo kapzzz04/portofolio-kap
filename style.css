@@ -267,12 +267,26 @@ section.me .container .content {
 }
 
 @media (max-width: 580px) {
-  .judul h1 {
+  /* .judul h1 {
     font-size: 12vmax;
+  } */
+
+  .judul p {
+    font-size: 18px;
   }
 
-  section.me .content h1 {
-    font-size: 6vmax;
+  .me .content h1 {
+    font-size: 36px;
+  }
+
+  section .button-judul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-judul .btn-danger {
+    margin: auto;
   }
 
   .me .content .lg-img {
