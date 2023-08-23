@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+body {
+  height: 4000px;
+}
+
 /* start hero section */
 .hero {
   height: 100vh;
@@ -167,8 +171,6 @@ section.me .p-img:hover {
 
 section.me div img {
   width: 400px;
-  /* position: relative;
-  top: -33px; */
 }
 
 section.me .container {
@@ -181,6 +183,42 @@ section.me .container .content {
 /* end about me */
 
 /* start section idn */
+
+section.idn {
+  background-color: aqua;
+  padding: 32px 0;
+}
+
+.idn .container {
+  gap: 78px;
+}
+
+.idn .container .col-4 {
+  width: 326px;
+  height: 326px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  border-radius: 20px;
+}
+
+.idn .container .col-4 img {
+  width: 326px;
+  height: 326px;
+  overflow-y: hidden;
+}
+
+.idn .container .col p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.idn .container .col h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
 
 /* end section idn */
 
@@ -199,9 +237,6 @@ section.me .container .content {
 
 /* Menyusut ul nya */
 @media (max-width: 991px) {
-  /* .navbar .container .pembungkus {
-  } */
-
   .menu-toggle {
     display: block;
   }
@@ -266,13 +301,9 @@ section.me .container .content {
   }
 }
 
-@media (max-width: 580px) {
-  /* .judul h1 {
-    font-size: 12vmax;
-  } */
-
+@media (max-width: 764px) {
   .judul p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .me .content h1 {
@@ -283,14 +314,24 @@ section.me .container .content {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* background-color: #393e46; */
   }
 
   .button-judul .btn-danger {
     margin: auto;
   }
 
+  .button-judul .btn-outline-secondary {
+    margin: auto;
+  }
+
   .me .content .lg-img {
-    top: -20px;
+    top: -0px;
     right: 20px;
+    opacity: 0.5;
+  }
+  .me .content .lk-img {
+    bottom: 200px;
+    opacity: 0.3;
   }
 }
