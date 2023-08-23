@@ -128,7 +128,7 @@ section .svg-1 {
 /* start about me */
 
 section.me {
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 80px;
   position: relative;
 }
@@ -185,19 +185,25 @@ section.me .container .content {
 /* start section idn */
 
 section.idn {
-  background-color: aqua;
   padding: 32px 0;
+  /* background-color: rgba(220, 53, 69, 0.5); */
 }
 
 .idn .container {
-  gap: 78px;
+  gap: 56px;
+}
+
+.idn .container div h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
 }
 
 .idn .container .col-4 {
   width: 326px;
   height: 326px;
-  /* background-color: rgba(0, 0, 0, 0.1); */
   border-radius: 20px;
+  background-color: rgba(220, 53, 69, 1);
 }
 
 .idn .container .col-4 img {
@@ -213,11 +219,29 @@ section.idn {
   line-height: 24px;
 }
 
-.idn .container .col h5 {
+.idn .container .col h4 {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
+}
+
+.idn .container .row {
+  width: 100%;
+}
+
+.container .col .row .one {
+  gap: 35px;
+}
+
+.container .col .row .one span {
+  width: 30%;
+  display: flex;
+  margin: auto;
+}
+
+.container .col .row span img {
+  width: 100%;
 }
 
 /* end section idn */
@@ -264,6 +288,7 @@ section.idn {
     opacity: 1;
   }
 
+  /* start about me */
   section.me div.container {
     gap: 24px;
     flex-direction: column;
@@ -285,9 +310,27 @@ section.idn {
   .me .content .lk-img {
     bottom: 120px;
   }
+
+  /* end aboutme */
+
+  /* start idn */
+  .idn .container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .idn .container .col-4 {
+    width: 100%;
+  }
+
+  .idn .container .col-4 img {
+    margin: auto;
+    display: flex;
+  }
+  /* end idn */
 }
 
-@media (max-width: 764px) {
+@media (max-width: 765px) {
   .header {
     max-width: 550px;
   }
@@ -299,9 +342,23 @@ section.idn {
     top: 50px;
     right: 30px;
   }
+
+  /* start idn */
+  .idn .container div h1 {
+    font-size: 8vmax;
+  }
+
+  .container .col .row .one {
+    gap: 15px;
+  }
+
+  .container .col .row .one span {
+    width: 40%;
+  }
+  /* end idn */
 }
 
-@media (max-width: 764px) {
+@media (max-width: 580px) {
   .judul p {
     font-size: 14px;
   }
@@ -331,7 +388,17 @@ section.idn {
     opacity: 0.5;
   }
   .me .content .lk-img {
-    bottom: 200px;
+    bottom: 300px;
     opacity: 0.3;
   }
+
+  /* start idn */
+  .idn .container div h1 {
+    font-size: 6vmax;
+  }
+
+  .container .col .row .one {
+    gap: 7px;
+  }
+  /* end idn */
 }
