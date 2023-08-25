@@ -397,6 +397,21 @@ section.ct {
   color: #222831;
 }
 
+.ct .container .col-dua .form-control {
+  background-color: #dc3545;
+}
+
+.ct .container .col-dua input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ct .container .col-dua textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
 .ct .container .col-dua form button {
   width: 50%;
   color: #eee;
@@ -419,7 +434,7 @@ section.ct {
 /* START FOOTER */
 footer.container-fluid {
   margin-top: 80px;
-  background-color: #222831;
+  background-color: #393e46;
   color: white;
 }
 
