@@ -735,6 +735,10 @@ div.akhir p {
 }
 
 @media (max-width: 580px) {
+  .judul h1 {
+    font-size: 7vmax;
+  }
+
   .judul p {
     font-size: 14px;
   }
