@@ -758,8 +758,9 @@ div.akhir p {
     margin: auto;
   }
 
-  .button-judul .btn-outline-secondary {
+  .button-judul .btn-secondary {
     margin: auto;
+    max-width: 60%;
   }
 
   .me .content .lg-img {
