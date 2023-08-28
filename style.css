@@ -760,7 +760,7 @@ div.akhir p {
 
   .button-judul .btn-secondary {
     margin: auto;
-    max-width: 60%;
+    width: 65vw;
   }
 
   .me .content .lg-img {
